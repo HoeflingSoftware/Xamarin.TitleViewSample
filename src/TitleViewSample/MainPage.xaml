@@ -4,11 +4,20 @@
              xmlns:local="clr-namespace:TitleViewSample"
              x:Class="TitleViewSample.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Image Source="company_logo"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="Start" />
+            <Label Text="Hoefling Software"
+                   HorizontalOptions="StartAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   FontAttributes="Bold"
+                   FontSize="20"/>
+            <Image Source="company_logo"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="End" />
+        </StackLayout>
+    </NavigationPage.TitleView>
 
 </ContentPage>
